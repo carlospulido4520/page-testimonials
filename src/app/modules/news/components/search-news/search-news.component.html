@@ -1,0 +1,17 @@
+<div
+  class="search-component"
+  [ngClass]="{ 'search-active': inputSearch2 != '' }"
+>
+  <mat-form-field mat-dialog-title appearance="outline">
+    <input
+      matInput
+      type="text"
+      placeholder="Search..."
+      [(ngModel)]="inputSearch2"
+      [formControl]="inputSearch"
+      (click)="onOpen()"
+      autocomplete="off"
+    />
+    <mat-icon matPrefix>search</mat-icon>
+  </mat-form-field>
+</div>

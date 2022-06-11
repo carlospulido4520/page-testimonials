@@ -1,0 +1,33 @@
+@import "../../../../../assets/styles/vars";
+
+.container_filter {
+    margin-top: 20px;
+    display: flex;
+
+    @include lt-md {
+        flex-direction: column;
+    }
+}
+
+.container_articles {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_subscribe {
+    width: 305px;
+    height: 376px;
+    left: 1013px;
+    top: 916px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0071BD;
+    border-radius: 9px;
+    color: #FFFFFF;
+    font-size: 24px;
+    @include lt-lg {
+       display: none;
+    }
+}

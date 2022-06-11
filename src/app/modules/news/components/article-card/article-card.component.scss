@@ -1,0 +1,66 @@
+@import "../../../../../assets/styles/vars";
+
+.container_article {
+    display: flex;
+    width: 790px;
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+    @include lt-md {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.tittle_article {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: $font_text;
+    line-height: 29px;
+    margin: 0 0 4px 0;
+}
+
+.article {
+    margin: 0;
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(34, 34, 34, 0.7);
+}
+
+.container_imagen img {
+    @include lt-md {
+        width: 100%;
+    }
+}
+
+.date {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(8, 8, 22, 0.38);
+}
+
+.user {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: $font_text;
+    color: rgba(34, 34, 34, 0.7);
+    margin: 0 0 0 15px;
+}
+
+.container_user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_article {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px 0 0
+}

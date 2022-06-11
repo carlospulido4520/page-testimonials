@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="tittle">Latest News</div>
+  <div class="container_filter">
+    <div class="padding_card">
+      <app-search-news></app-search-news>
+    </div>
+    <div class="padding_card w-100">
+      <app-select-form
+        [configuration]="configurationLanguage"
+      ></app-select-form>
+    </div>
+    <div class="padding_card w-100">
+      <app-select-form [configuration]="configurationCourse"></app-select-form>
+    </div>
+  </div>
+
+  <div class="container_articles">
+    <app-article-card></app-article-card>
+    <div class="box_subscribe">Subscribe Newsletter</div>
+  </div>
+</div>

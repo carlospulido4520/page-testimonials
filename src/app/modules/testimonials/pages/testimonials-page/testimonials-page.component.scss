@@ -1,0 +1,74 @@
+@import "../../../../../assets/styles/vars";
+
+.tittle {
+    margin-bottom: 100px;
+}
+
+.container_carusel {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+
+.box_backgound {
+    background: #F9EFE4;
+    border-radius: 20px;
+    width: 80%;
+    height: 70%;
+    bottom: 0;
+    position: absolute;
+    left: calc(50% - 40%);
+
+    @include lt-md {
+        width: 100%;
+        left: 0;
+        border-radius: 0;
+    }
+}
+
+.btn_rigth {
+    right: -23px;
+
+    @include lt-md {
+        right: 10px;
+    }
+}
+
+.btn_left {
+    left: -23px;
+
+    @include lt-md {
+        left: 10px;
+    }
+}
+
+.container_circle {
+    bottom: 20px;
+    position: absolute;
+    left: calc(50% - 50px);
+    display: flex;
+    width: 100px;
+}
+
+.circle {
+    background: rgba(0, 53, 89, 0.58);
+    opacity: 0.5;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.circle:hover {
+    background: #04D9D9;
+    cursor: pointer;
+}
+
+.selected {
+    background: #04D9D9;
+}

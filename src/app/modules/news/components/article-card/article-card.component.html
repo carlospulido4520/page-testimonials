@@ -1,0 +1,20 @@
+<div class="container_article" *ngFor="let article of articles">
+  <div class="container_imagen">
+    <img [src]="article.imageArticle" alt="" />
+  </div>
+  <div class="container_text">
+    <p class="tittle_article">
+      {{ article.tittleArticle }}
+    </p>
+    <p class="article">
+      {{ article.article }}
+    </p>
+    <div class="footer_article">
+      <p class="date">{{ article.date }}</p>
+      <div class="container_user">
+        <img [src]="article.imageUser" alt="" />
+        <p class="user">{{ article.nameUser }}</p>
+      </div>
+    </div>
+  </div>
+</div>
