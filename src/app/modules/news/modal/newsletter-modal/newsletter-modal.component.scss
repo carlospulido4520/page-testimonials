@@ -1,0 +1,49 @@
+@import "../../../../../assets/styles/vars";
+
+.title {
+    font-family: $font_title;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 39px;
+    margin: 0;
+}
+
+.color {
+    color: #EAA413;
+}
+
+.container_dialog {
+    padding: 50px 80px 50px 80px;
+    text-align: center;
+}
+
+.button_newLetter {
+    color: #FFFFFF;
+    background: #0071BD;
+    font-family: $font_text;
+    width: 348px;
+    height: 50px;
+    border: 0;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 20px 0px 20px 0px;
+    cursor: pointer;
+    @include lt-md {
+        width: 100%;
+    }
+}
+
+.text_footer {
+    a {
+        color: rgba(8, 8, 22, 0.54);
+    }
+    font-family: $font_text;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(8, 8, 22, 0.54);
+}

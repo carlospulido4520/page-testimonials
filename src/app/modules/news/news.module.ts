@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { SearchNewsComponent } from './components/search-news/search-news.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
+import { MatSelectModule } from '@angular/material/select';
 
 // Menus
 
@@ -39,7 +40,8 @@ import { SharedModule } from '../shared/shared.module';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
+    MatSelectModule
   ],
   exports: [
     NewsPageComponent

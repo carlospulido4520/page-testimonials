@@ -1,1 +1,43 @@
-<p>newsletter-modal works!</p>
+<div class="container_dialog">
+  <p class="title">Sign up today for the</p>
+  <p class="title color">Lorem Newsletter!</p>
+
+  <form>
+    <mat-form-field appearance="standard" class="w-100">
+      <input matInput placeholder="Email Address" />
+    </mat-form-field>
+
+    <mat-form-field appearance="standard" class="w-100">
+      <input matInput placeholder="First Name" />
+    </mat-form-field>
+
+    <mat-form-field appearance="standard" class="w-100">
+      <input matInput placeholder="Last Name" />
+    </mat-form-field>
+
+    <mat-form-field appearance="standard" class="w-100">
+      <input matInput placeholder="Country" />
+    </mat-form-field>
+
+    <mat-form-field appearance="standard" class="w-100">
+      <mat-select placeholder="Language">
+        <mat-option [value]="option" *ngFor="let option of languages">
+          {{ option }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="standard" class="w-100">
+      <mat-select placeholder="How did you find us?">
+        <mat-option [value]="option" *ngFor="let option of findUS">
+          {{ option }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button class="button_newLetter">Subscribe</button>
+  </form>
+  <p class="text_footer">
+    Read our <a href=""> Privacy Policy </a> to see how we protect your data.
+  </p>
+</div>
